@@ -1,7 +1,127 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+    style="@style/screen_login"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
+    <!--    logo and application name-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:src="@drawable/logodd2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="2"
+            android:text="Shop online"
+            android:textAlignment="center"
+            android:textColor="#AC4444"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <!--    Title login-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Đăng nhập"
+        android:textAlignment="center"
+        android:textColor="#251680"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="229dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:text="Mua sắm khắp nơi - giao dịch khắp miền"
+        android:textSize="20dp"
+        android:textStyle="italic" />
+
+    <!--    input email-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        >
+        <!--        title input email-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            />
+
+        <!--        input email-->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Vui lòng nhập địa chỉ email"
+            android:layout_marginHorizontal="20dp"
+            android:inputType="textEmailAddress"
+            android:focusableInTouchMode="true"
+            android:imeOptions="actionDone"
+            style="@style/edt_login"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="10dp"
+            />
+    </LinearLayout>
+
+    <!-- input password-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        >
+        <!--        title input password-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            />
+
+        <!--        input password-->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Vui lòng nhập mật khẩu"
+            android:backgroundTint="@android:color/transparent"
+            android:layout_marginHorizontal="20dp"
+            android:inputType="textEmailAddress"
+            android:focusableInTouchMode="true"
+            android:imeOptions="actionDone"
+            />
+    </LinearLayout>
+
+    <!--    Button login-->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đăng nhập"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        />
 </LinearLayout>
