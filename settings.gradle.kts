@@ -14,4 +14,4 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "Duan"
-include(":app")
+include(":app:screen_regeter")
