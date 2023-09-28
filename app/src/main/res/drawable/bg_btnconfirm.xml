@@ -3,4 +3,8 @@
     <solid android:color="@color/color_btnconfirm"/>
     <corners android:radius="5dp"/>
     <stroke android:width="2dp"/>
+    <padding android:bottom="5dp"/>
+    <padding android:top="5dp"/>
+    <padding android:left="20dp"/>
+    <padding android:right="20dp"/>
 </shape>

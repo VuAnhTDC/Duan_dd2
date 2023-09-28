@@ -17,7 +17,7 @@ import com.google.android.material.textfield.TextInputEditText;
 public class screen_login extends AppCompatActivity {
 
     LinearLayout vMain;
-    TextInputEditText txtInputEmail,txtInputPassword;
+    TextInputEditText edt_email, edt_password;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,11 +40,12 @@ public class screen_login extends AppCompatActivity {
 
 //        sự kiện khi nhập xong giá trị email
 
-        txtInputEmail.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+        edt_email.setOnEditorActionListener(new TextView.OnEditorActionListener() {
             @Override
             public boolean onEditorAction(TextView textView, int i, KeyEvent keyEvent) {
+//                nếu nhấn vào phím done
                 if (i == EditorInfo.IME_ACTION_DONE){
-                    txtInputPassword.requestFocus();
+                    edt_password.requestFocus();
                 }
                 return false;
             }
@@ -71,7 +72,7 @@ public class screen_login extends AppCompatActivity {
     //    Ánh sạ
     private void setControl() {
         vMain = findViewById(R.id.vmain);
-        txtInputEmail = findViewById(R.id.txtinput_email);
-        txtInputPassword = findViewById(R.id.txtinput_password);
+        edt_email = findViewById(R.id.edt_email);
+        edt_password = findViewById(R.id.edt_password);
     }
 }

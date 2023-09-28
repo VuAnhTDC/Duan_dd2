@@ -73,7 +73,7 @@
             style="@style/style_textinputlayout_title_screenlogin"
             >
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/txtinput_email"
+                android:id="@+id/edt_email"
                 style="@style/style_textinputedit_screenlogin"
                 android:hint="Vui long nhap email"
                 android:inputType="textEmailAddress"
@@ -103,12 +103,41 @@
             >
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/txtinput_password"
+                android:id="@+id/edt_password"
                 style="@style/style_textinputedit_screenlogin"
                 android:hint="Vui long nhap mat khau"
                 android:inputType="textPassword"
                 />
         </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+<!--    Đăng ký và quên mật khẩu -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="20dp"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Quên mật khẩu"
+            android:textStyle="italic"
+            android:textColor="#121AB1"
+            android:layout_weight="0.3"
+            android:textAlignment="center"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Đăng ký"
+            android:textStyle="italic"
+            android:textColor="#121AB1"
+            android:textAlignment="center"
+            android:layout_weight="0.3"
+            />
 
     </LinearLayout>
 
