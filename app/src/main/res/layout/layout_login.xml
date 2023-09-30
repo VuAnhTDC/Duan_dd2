@@ -22,7 +22,7 @@
             android:layout_height="100dp"
             android:layout_weight="1"
             android:scaleType="fitXY"
-            android:src="@drawable/logodd2"
+            android:src="@drawable/ic_logo"
             />
 
         <TextView
@@ -75,8 +75,9 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/edt_email"
                 style="@style/style_textinputedit_screenlogin"
-                android:hint="Vui long nhap email"
+                android:hint="Email người dùng"
                 android:inputType="textEmailAddress"
+                android:imeOptions="actionDone"
                 />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -105,8 +106,9 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/edt_password"
                 style="@style/style_textinputedit_screenlogin"
-                android:hint="Vui long nhap mat khau"
+                android:hint="Mật khẩu người dùng"
                 android:inputType="textPassword"
+                android:imeOptions="actionDone"
                 />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -121,6 +123,7 @@
         android:layout_marginTop="20dp"
         >
         <TextView
+            android:id="@+id/txtForgetPassword"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="Quên mật khẩu"
@@ -130,6 +133,7 @@
             android:textAlignment="center"
             />
         <TextView
+            android:id="@+id/txtRegeter_Account"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="Đăng ký"
@@ -143,14 +147,8 @@
 
     <!--    Button login-->
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/bg_btnconfirm"
-        android:paddingHorizontal="10dp"
+        style="@style/style_btnConfirm"
         android:text="Đăng nhập"
-        android:textStyle="bold"
-        android:textColor="#F6E7E7"
+        android:background="@drawable/btn_presss"
         />
 </LinearLayout>
